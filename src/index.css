@@ -126,6 +126,10 @@ tbody tr:nth-child(odd) {
   gap: 10px;
 }
 
+.button-container button {
+  margin: 0 10px;
+}
+
 .circle-button-minus{
   background-color: red;
   border: none;
