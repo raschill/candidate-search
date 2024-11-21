@@ -118,3 +118,44 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.circle-button-minus{
+  background-color: red;
+  border: none;
+  color: black;
+  border-radius: 55%;
+  width: 90px;
+  height: 90px;
+  font-size: 60px;
+  line-height: 90px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.circle-button-plus {
+  background-color: green;
+  border: none;
+  color: black;
+  border-radius: 55%;
+  width: 90px;
+  height: 90px;
+  font-size: 60px;
+  line-height: 90px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+}
