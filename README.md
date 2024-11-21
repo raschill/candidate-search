@@ -8,7 +8,7 @@
 
  ## Mockup Pictures
 
-![alt text](https://github.com/raschill/candidate-search/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/raschill/candidate-search/blob/main/Assets/13-01-candidate_search_homepage.png?raw=true)
  
  ## Table of Contents
 
