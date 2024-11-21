@@ -1,33 +1,55 @@
-# React + TypeScript + Vite
+# Candidate Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ ![MIT](https://img.shields.io/badge/License-MIT-blue)
 
-Currently, two official plugins are available:
+  ## Description
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+ A candidate search application that calls the GitHub API and renders data in the browser.
 
-## Expanding the ESLint configuration
+ ## Mockup Pictures
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![alt text](https://github.com/raschill/candidate-search/blob/main/image.jpg?raw=true)
+ 
+ ## Table of Contents
 
-* Configure the top-level `parserOptions` property as follows:
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+ ## Installation
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+ Clone down the repository and open it in VS Code.
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+ ## Usage
+
+Use npm install to set up the necessary dependencies:
+- Open the integrated terminal.
+- You will need to use 'nmp i' without the quotes.
+
+Run it:
+- Type npm run dev
+
+
+ ## License
+
+ This project utilizes an MIT License.
+    For more details please go to: [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/) 
+
+ ## Contributing
+
+- Ariel Schilling
+- ChatGPT, my pair coder and best friend
+- edX Boot Camps LLC, responsible for starter code
+
+ ## Tests
+
+ No tests at this time.
+ 
+ ## Questions
+
+  Please contact the following with any questions you may have:
+ - GitHub: https://github.com/raschill
+ - Email: rebeccaaschilling@gmail.com
