@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {getSavedCandidates, removeCandidate} from '../utils/localStorageUtils';
+import {getSavedCandidates, removeCandidate} from '../utils/localStorageU';
 import {Candidate} from '../interfaces/Candidate.interface';
 
 const SavedCandidates = () => {
