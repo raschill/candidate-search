@@ -18,14 +18,14 @@ const SavedCandidates = () => {
 
   if(savedCandidates.length === 0) {
     return <p>No saved candidates.</p>;
-  };
+  }
 
 
   return (
     <div>
       <h1>Potential Candidates</h1>
       <table className= 'table'>
-        <thread>
+        <thead>
           <tr>
             <th>Image</th>
             <th>Name</th>
@@ -35,7 +35,7 @@ const SavedCandidates = () => {
             <th>Bio</th>
             <th>Remove</th>
           </tr>
-        </thread>
+        </thead>
         <tbody>
           {savedCandidates.map((candidate)=> (
             <tr key={candidate.id}>
@@ -49,7 +49,8 @@ const SavedCandidates = () => {
               <td>{candidate.bio || 'N/A'}</td>
               <td style= {{textAlign: 'center', verticalAlign: 'middle', marginTop: '10px'}}>
         
-        <button className= "circle-button-minus" onClick= {handleRemoveCandidate(candidate.id)} 
+        <button className= "circle-button-minus" 
+        onClick= {() =>handleRemoveCandidate(candidate.id)} 
         style= {{height: '50px', width: '50px', fontSize: '40px', display: 'inline-flex', alignItems: 'center'}}>
           <code>&#8212;</code>
         </button>

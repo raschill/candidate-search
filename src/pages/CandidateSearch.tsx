@@ -63,23 +63,24 @@ const CandidateSearch = () => {
   <div>
     <h1>CandidateSearch</h1>
 
-    <div style={{width: '300px', margin: '2 auto', borderRadius: '12px', overflow: 'hidden'}}>
-      <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', borderRadius: '12px', overflow: 'hidden'}}>
+    <div style={{width: '300px', margin: '20px auto', borderRadius: '12px', overflow: 'hidden'}}>
+      <div style={{ display: 'flex', flexFlow: 'column', alignItems: 'center', borderRadius: '12px'}}>
         <img src= {currentCandidate.avatar_url} alt= {`Candidate ${currentCandidate.login}'s avatar`}
         style= {{width: '300px', height: '100%', borderRadius: '12px'}}/>
-        <div style= {{width: '300px', flexGrow: 1, backgroundColor: 'blue', color: 'fuschia', padding: '12px', borderRadius: '12px'}}>
-          <p style= {{marginLeft: 10}}>Name: {`${currentCandidate.name || 'N/A'} (currentCandidate.login)`}</p>
-          <p style= {{marginLeft: 10}}>Location: {currentCandidate.location || 'N/A'}</p>
-          <p style= {{marginLeft: 10}}>Email: {currentCandidate.email || 'N/A'}</p>
-          <p style= {{marginLeft: 10}}>Company: {currentCandidate.company || 'N/A'}</p>
-          <p style= {{marginLeft: 10}}>Bio: {currentCandidate.bio || 'N/A'}</p>
+        <div style= {{width: '300px', flexGrow: 1, backgroundColor: 'blue', color: 'fuchsia', padding: '12px', borderRadius: '12px'}}>
+          <p>Name: {`${currentCandidate.name || 'N/A'} (${currentCandidate.login})`}</p>
+          <p>Location: {currentCandidate.location || 'N/A'}</p>
+          <p>Email: {currentCandidate.email || 'N/A'}</p>
+          <p>Company: {currentCandidate.company || 'N/A'}</p>
+          <p>Bio: {currentCandidate.bio || 'N/A'}</p>
         </div>
       </div>
 
-      <div className= "button-container" style= {{display: 'flex', width: '300px', textAlign: 'center', marginTop: '10px'}}>
+      <div className= "button-container" style= {{display: 'flex', justifyContent: 'center', marginTop: '10px'}}>
         <button onClick= {handleSkipCandidate} className= "circle-button-minus">
           <code>&#8212;</code>
         </button>
+        
         <button onClick= {()=> handleSaveCandidate(currentCandidate)} className= "circle-button-plus">+</button>
       </div>
     </div>
